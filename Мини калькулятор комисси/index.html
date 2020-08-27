@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		body {
+			box-sizing: border-box;
+		}
+
+		.block {
+			width: 30px;
+			height: 108px;
+			border: 1px solid #000;
+			position: relative;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.main,
+		.proc {
+			width: 100%;
+			max-height: 100%;
+
+		}
+
+		.main {
+			background: green;
+
+
+		}
+
+		.proc {
+			background: red;
+
+		}
+	</style>
+</head>
+
+<body>
+	<p>Реализовать калькулятор, в котором есть слайдер (input type=”range”) и поле ввода (input type=”number”).
+	</p>
+	<p>Красный блок - количество комиссии. Комиссия вычисляется по формуле:
+		<ul>
+			<li>(range < 20)=2% </li> <li>(20 - 50) = 4% </li>
+			<li>(50 - 75) = 6% </li>
+			<li>(75 - 100) = 8% </li>
+		</ul>
+
+
+		<input type="range" value="0">
+		<input type="number" value="0">
+		<div class="block">
+			<div class="main"></div>
+			<div class="proc"></div>
+		</div>
+
+
+
+
+	</p>
+	<script src="js/home.js"></script>
+</body>
+
+</html>

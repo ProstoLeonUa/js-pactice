@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		ul li {
+			padding-top: 20px;
+			border: 1px solid black;
+			background: #fff;
+			margin-top: 5px;
+		}
+
+		ul li:hover {
+			cursor: pointer;
+			color: red;
+		}
+
+		.menu {
+			position: absolute;
+			visibility: hidden;
+			z-index: 1;
+			background-color: #80808091;
+			width: 200px;
+			padding: 20px;
+			user-select: none;
+		}
+
+		body {
+			height: 1000px;
+		}
+	</style>
+</head>
+
+<body>
+	<p>Реализовать контекстное меню. Список хранить в памяти. При клике правой кнопкой мышии:
+		появляется контекстное меню в месте нажатяи кнопкой мыши(дизайн и принцип работы сделать точно такой же как
+		работает в браузере)
+		список контекстного меню на ваше усмотрение
+		меню пропадает при нажатии в любом месте окна за границами контекстного меню
+		Хранить в списке action - название функции которая будет выполнятся при нажатии на пункт меню</p>
+	<hr>
+	<div>
+		Специально добавил высоту body 1000px, что бы показать как работает меню по оси Y.<br>
+		Если высоту убрать, меню скрола создавать не будет.<br>
+		Если вызывать меню у нижнего или правого края, оно не будет залазить за рамки окна и всегда адаптируется.
+		ЛКМ на пустом месте отменяет меню.<br>
+		ЛКМ на меню вызывает действие.<br>
+		<h2>Результат действий меню выводиться в консоль</h2>
+	</div>
+	<script src="js/home.js"></script>
+</body>
+
+</html>

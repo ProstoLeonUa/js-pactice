@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			width: 200px;
+			position: fixed;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form>
+		<label for="login">user login</label>
+		<input type="text" id="login" name="login">
+		<label for="password">user password</label>
+		<input type="password" id="password" name="password">
+		<button>sing in</button>
+	</form>
+	<p style="display:flex">
+		Создать форму с полями login, password и кнопку sign in. По нажатию на кнопку введенные данные с формы
+		отправляются на сервер.
+		Вывести на экрн товары юзера.
+	</p>
+	<div class="products"></div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

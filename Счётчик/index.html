@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.block {
+			border: 5px solid black;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		table {
+			border: 1px solid black;
+		}
+
+		.cell {
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		button {
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		.popup {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #000000;
+			opacity: 0.9;
+			display: none;
+		}
+
+		.popup__body {
+			min-height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 10px;
+		}
+
+		.popup__content {
+			background-color: #ffffff;
+			color: #000;
+			max-width: 800px;
+			padding: 30px;
+			z-index: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<button class="clearcounters">ClearCounters</button>
+	<button class="setcounter">setCounter</button>
+	<button class="setpopup">setPopup</button>
+	<div class="block">
+		<button class="button">click</button>
+
+		<span class="counter">0</span>
+	</div>
+
+	<div class="block">
+		<button class="button">click</button>
+
+		<span class="counter">0</span>
+	</div>
+	<div class="block">
+		<button class="button">click</button>
+
+		<span class="counter">0</span>
+	</div>
+	<p>Создаем 2 блока, с кнопкой Click и счетчиком counter(в виде числа). При нажатии на Click - counter увеличивается.
+		При перезагрузке страницы counter должен сохраняться.
+		Доп задание 2) Создать кнопку ClearCounters() - очищает все счетчики
+		Создать кнопку setCounter(), который запрашивает id (каком блоку изменить счетчик) блока и устанавливает значение(
+		в типе number ) в counter.</p>
+	<p>
+		При увеличении counter-а - каждое значение до 50 должно окрашивать соответствующий блок в случайно сгенерированный
+		цвет. Цвета генерируются при изменении counter-a и сохраняются в Storage. Когда значение доходит до 50 -
+		применяется
+		цвет по умолчанию. 'this.style.backgroundColor = "rgb(x, y, z)";' -> x = getRand(256) y = getRand(256) z =
+		getRand(256)
+	</p>
+
+
+
+	<div class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<h3>Выбрать счётчик и ввести цифру</h3>
+				<input class="change-input" type="number" value="0">
+				<button class="change-click">Изменить</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/home.js"></script>
+</body>
+
+</html>

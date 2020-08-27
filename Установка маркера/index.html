@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.design {
+			display: inline;
+			list-style: none;
+			font-size: 24px;
+		}
+
+		span {
+			color: red;
+			margin: 0;
+			padding: 0;
+		}
+
+		.wrap {
+			width: 200px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			margin-top: 40px;
+		}
+
+		#top {
+			grid-column: 2/3;
+		}
+
+		#left {
+			grid-column: 1/2;
+		}
+
+		#right {
+			grid-column: 3/4;
+		}
+
+		#bottom {
+			grid-column: 2/3;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="message"></div>
+	<input type="text" value="0">
+	<input type="text" value="3">
+	<button id="set">установить маркер</button>
+	<ul class="design">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div class="wrap">
+		<button id='top'>top</button>
+		<button id='left'>left</button>
+		<button id='right'>right</button>
+		<button id='bottom'>bottom</button>
+	</div>
+
+	<script src="js/home.js"></script>
+
+</body>
+
+</html>
